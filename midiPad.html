@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="midiPad.css">
+  
+  <title>mertnoktakom</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navBar-elements">
+     <div class="iletisim">İletişim</div>
+     <div class="logo"><img src="logo.png" alt=""></div>
+     <div class="bilgi">Bilgi</div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="layers">
+
+      <div id="waveform">
+        <h2 style="color:white;">Ana-1</h2>
+
+      
+
+
+        <div class="mixers">
+
+          <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume1">
+           
+        </div>
+        
+
+
+      <div class="buttons">
+          <i class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-stop"></i>
+          <i class="fa-solid fa-pause"></i>
+      </div>
+      </div>
+
+      
+      <div id="waveform2">
+        <h2 style="color:white;">Ana-2</h2>
+        
+        <div class="mixers">
+          
+          <input type="range" min="0" max="1" step="0.1" value="0.5" class="volume2">
+
+        </div>
+        <div class="buttons">
+          <i id="btn2" class="fa-solid fa-play"></i>
+          <i class="fa-solid fa-stop"></i>
+          <i class="fa-solid fa-pause"></i>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  </div>
+ 
+  <div class="blocks">
+
+      <audio id="bass1" src="/sounds/bass1.mp3"></audio>
+    <audio id="bass2" src="/sounds/bass2.mp3"></audio>
+    <audio id="bass3" src="/sounds/bass3.mp3"></audio>
+
+
+      <audio id="snare1" src="/sounds/snare1.mp3"></audio>
+    <audio id="snare2" src="/sounds/snare2.mp3"></audio>
+    <audio id="snare3" src="/sounds/snare3.mp3"></audio>
+   
+    
+      <audio id="drum1" src="/sounds/drum1.mp3"></audio>
+      <audio id="drum2" src="/sounds/drum2.mp3"></audio>
+      <audio id="drum3" src="/sounds/drum3.mp3"></audio>
+   
+
+    <div id="buttons">
+    
+    </div>
+
+</div>
+  
+ <footer class="footer"> 
+   <h2><a href="www.google.com"></a>Emeği geçenler</h2>
+   <h2><a href="#"></a>Dökümasyon</h2>
+   <h2><a href="#"></a>Yardım</h2>
+ </footer>
+ 
+  <script src="https://unpkg.com/wavesurfer.js"></script>
+  <script src="midiPad.js"></script>
+</body>
+</html>
